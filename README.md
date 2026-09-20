@@ -1,0 +1,79 @@
+<h1 align="center">Imagis - AI Image Restyling Studio</h1>
+
+Imagis is a private AI image restyling studio that transforms portraits and scenes into curated visual styles. Users can upload an image, choose a style, generate a result with OpenAI, and keep their personal generation history.
+
+Built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Clerk**, **PostgreSQL**, **Drizzle ORM**, **ImageKit**, and **Sentry**.
+
+![Demo App](/public/Imagis_Preview_Image.png)
+
+---
+
+## 🚀 Highlights
+
+- 🎨 AI Image Generation (powered by OpenAI)
+- 🏠 Premium Landing Page with 3D visuals & gradients
+- 🔐 Authentication via Clerk (Google, GitHub, Email & Password)
+- 🔑 Email Verification Flow
+- 🧠 Multiple AI Presets:
+  - Storybook
+  - Anime Cel
+  - Clay Render
+  - PixArt
+  - Voxel Block
+  - Marble Sculpture
+- 🧾 Image Generation History
+- 📊 User Dashboard (track generations left)
+- 💳 Subscription System:
+  - Free Plan → 3 generations/month
+  - Pro Plan ($19/month) → 75 generations
+  - Studio Plan ($29/month) → 175 generations
+- 🔄 Smart Upgrades (pay only the difference)
+- 📆 Monthly & Yearly Plans Support
+- 📩 Email Notifications & Receipts
+- 📂 PostgreSQL + Drizzle ORM
+- ⚡ Data Fetching with TanStack Query
+- 🎨 Tailwind CSS + Shadcn UI
+- 🛠️ Error Monitoring with Sentry
+- 🤖 AI-assisted development workflow (Cline)
+- 🚀 Deployment (free-tier friendly)
+
+---
+
+## 🏗️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI:** Tailwind CSS + Shadcn
+- **Auth:** Clerk
+- **Database:** PostgreSQL (Neon) + Drizzle ORM
+- **Payments:** Clerk Billing
+- **AI:** OpenAI
+- **Monitoring:** Sentry
+- **Storage/CDN:** ImageKit
+
+---
+
+## ⚙️ .env Setup
+
+```bash
+DATABASE_URL="<your_database_url>"
+
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY="<your_imagekit_public_key>"
+IMAGEKIT_PRIVATE_KEY="<your_imagekit_private_key>"
+
+SENTRY_AUTH_TOKEN="<your_sentry_auth_token>"
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="<your_clerk_publishable_key>"
+CLERK_SECRET_KEY="<your_clerk_secret_key>"
+
+OPEN_AI_API_KEY="<your_openai_api_key>"
+
+
+```
+
+## 🚀 Run the app
+
+```bash
+npm install
+npm run dev
+```
